@@ -176,8 +176,41 @@ ul ,li {
     color: hsl(167, 40%, 24%);
 }
 
-/* commends */
+/* review */
 
+.review {
+    padding: 50px;
+}
 
+.review-title {
+    text-align: center;
+    color: #888;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
 
+.rev-card {
+    width: 300px;
+    margin-top: 40px;
+}
 
+.rev-img {
+    width: 120px;
+    border-radius: 50%;
+    padding: 35px;
+    text-align: center;
+}
+
+.rev-text {
+    
+    text-align: center;
+}
+
+.rev-name {
+
+}
+
+.rev-span {
+
+}
