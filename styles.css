@@ -9,9 +9,9 @@
 }
 
 body {
-    width: 100%;
+    max-width: 1440px;
     font-size: 18px;
-
+    font-family: 'Fraunces', serif;
 }
 
 header {
@@ -37,7 +37,7 @@ ul ,li {
     width: 65px;
 }
 
-a {
+.item {
     padding:10px 30px;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
@@ -47,13 +47,13 @@ a {
     height: 20px;
 }
 
-a:hover {
+.item:hover {
     background-color: hsl(209, 66%, 65%);
     border-radius: 25px;
     text-transform: uppercase;
     transition: ease-in-out 0.5s;
 }
-a:focus {
+.item:focus {
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     color: hsl(198, 62%, 26%);
@@ -77,23 +77,106 @@ a:focus {
     top: 45%;
 }
 
-main {
-    width: 100%;
-    height: auto;
-}
 
 .cards {
-    
+    max-width: 100%;
     display: grid;
-    /* grid-template-columns: auto auto; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+
+.card-img{
+    width: 100%;
+}
+
+.card-1{
+    position: relative;
+    padding: 90px;
+    
+}
+
+.box-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: hsl(212, 27%, 19%);
+    
+}
+
+.box-p{
+    font-family: 'Fraunces', serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: hsl(213, 9%, 39%);
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 1.2em;
+    padding: 15px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 100;
+  }
+  
+.btn::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 25px;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+.btn:hover {
+    
+}
+
+
+.card-5 {
+    position: relative;
+}
+
+.card-6 {
+    position: relative;
 }
 
 
 
+.card-title {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    color: hsl(198, 62%, 26%);
+}
 
+.card-text {
+    position: absolute;
+    top: 65%;
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+    padding: 10px 100px;
+}
 
+.card-5  p ,.card-5 h1 {
+    color: hsl(167, 40%, 24%);
+}
 
-
+/* commends */
 
 
 
