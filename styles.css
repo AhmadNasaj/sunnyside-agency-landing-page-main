@@ -157,6 +157,8 @@ ul ,li {
 
 
 
+
+
 .card-title {
     position: absolute;
     top: 55%;
@@ -196,21 +198,93 @@ ul ,li {
 }
 
 .rev-img {
-    width: 120px;
+    width: 100px;
     border-radius: 50%;
     padding: 35px;
     text-align: center;
+    margin-left: 60px;
+    
+    
 }
 
 .rev-text {
-    
+    color: #555;
     text-align: center;
+    line-height: 25px;
 }
 
 .rev-name {
-
+    text-align: center;
+    margin-top: 30px;
+    padding: 25px;
 }
 
 .rev-span {
+    text-align: center;
+    color: #999;
+}
 
+.rev-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-left: 50px;
+}
+
+.cards-pic {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+}
+
+.pic {
+    width: 100%;
+}
+
+footer{
+    background-color: hsl(168, 34%, 41%);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fot-title {
+    color: hsl(167, 40%, 24%);
+    padding: 45px;
+}
+
+.fot-item {
+    color: hsl(167, 40%, 24%);
+    text-decoration: none;
+    padding: 30px;
+}
+
+.fot-logo {
+    padding: 20px;
+}
+
+
+
+/* screen size */
+
+@media only screen and (max-width: 375px) {
+    .logo {
+        width: 40px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .card-img {
+        width: 375px;
+    }
+    header {
+        max-width: 375px;
+        background-size: cover;
+    }
+    .card-1 {
+        width: 375px;
+    }
 }
