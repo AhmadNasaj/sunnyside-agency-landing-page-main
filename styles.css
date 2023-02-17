@@ -203,8 +203,6 @@ ul ,li {
     padding: 35px;
     text-align: center;
     margin-left: 60px;
-    
-    
 }
 
 .rev-text {
@@ -286,5 +284,15 @@ footer{
     }
     .card-1 {
         width: 375px;
+    }
+    .rev-cards{
+       
+        display: block;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .review {
+        display: flex;
+        flex-direction: column;
     }
 }
