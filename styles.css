@@ -37,6 +37,12 @@ ul ,li {
     width: 65px;
 }
 
+.toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+
 .item {
     padding:10px 30px;
     text-decoration: none;
@@ -267,9 +273,76 @@ footer{
 
 /* screen size */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 100px) and (max-width: 375px) {
+    /* toggle */
+    header {
+        background-image: url(./images/mobile/image-header.jpg);
+    }
+    .menu {
+        display: none;
+      }
+    
+      .toggle {
+        display: block;
+      }
+    
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        right: 20px;
+        background-color: #fff;
+        padding: 10px;
+      }
+    
+      .menu.active li {
+        margin: 10px 0;
+        
+      }
+    
+      .menu.active a {
+        color: #999;
+      }
+      .menu.active a:focus {
+        color: black;
+        background-color: hsl(51, 100%, 49%);
+      }
+      .header-title {
+        font-size: 1.5em;
+      }
+
     .logo {
         width: 40px;
+    }
+
+    .card-1 {
+       max-width: 375px;
+       padding: 20px;
+    }
+
+    .box-title {
+        font-size: 1.5em;
+    }
+
+    .box-p {
+        font-size: 0.9em;
+        width: 280px;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+
+    .card-title {
+        left: 20%;
+        font-size: 1.2em;
+    }
+
+    .card-text {
+        font-size: 0.8em;
     }
     .cards {
         grid-template-columns: 1fr;
@@ -295,4 +368,10 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .cards-pic {
+        grid-template-columns: 1fr 1fr;
+    }
+    .close {
+        display: block;
+      }
 }
